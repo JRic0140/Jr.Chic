@@ -259,9 +259,16 @@ footer >div div{
     }
 
     section{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
         grid-template-rows: 50% 1fr 3px;
         grid-template-areas: "b b" "a a" "c c";
     }
+    section .brs{
+        margin: 20px auto;
+    }
+    
     footer{
         flex-flow: column;
         justify-content: center;
