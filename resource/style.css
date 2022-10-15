@@ -266,12 +266,15 @@ footer >div div{
         grid-template-areas: "b b" "a a" "c c";
     }
     section .brs{
-        margin: 20px auto;
+        margin: 15px auto;
     }
     
     footer{
         flex-flow: column;
         justify-content: center;
+    }
+    .mainText .designer{
+        flex-flow: column;
     }
 
 }
