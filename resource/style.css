@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+    box-sizing: border-box;
+
+}
+/* after 920p */
+
+body{
+    /* transform: translateY(100%);  */
+}
+
+slide{
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+
+    /* boxShadow */
+    box-shadow: -4px 6px 24px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -4px 6px 24px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -4px 6px 24px 0px rgba(0,0,0,0.53);
+}
+.imageSlide, .mainText{
+    width: 50%;
+    height: 100%;
+    
+}
+.mainText{
+    background-color: #f17291;
+    display: grid;
+    color: white;
+    grid-template-areas:" a"  "b"  "c";
+    
+}
+
+.mainText .textCenter{
+    grid-area: b;
+    display: flex;
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    border: solid white 1px;
+
+}
+.mainText .textCenter span{
+
+    margin: 15px;
+
+}
+
+.imageSlide{
+    background-image: url("./img/slide.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+}
+
+.mainText .textCenter span:nth-child(1){
+    font-size: 20px;
+
+}
+.mainText .textCenter span:nth-child(3){
+    font-size: 30px;
+}
+
+.mainText .designer{
+    grid-area: c;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 20px;
+}
+.br{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+}
+
+
+/* section */
+
+section{
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 5px;
+    padding: 50px 0;
+    grid-template-areas: "a b" "c c";
+    justify-items: center;
+
+
+}
+.brs{
+    grid-area: c;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+section .slide{
+    grid-area: a;
+    z-index: 2;
+
+}
+.prchic{
+    font-size: 30px;
+    font-weight: 500;
+}
+.prchic:nth-child(1){
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+section .slide .title{
+
+    display: flex;
+    flex-flow: column;
+    color: #f17291;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+section .slide .title span:nth-child(1){
+    font-size: 45px;
+    font-weight: 300;
+}
+section .slide .title span:nth-child(2){
+
+    font-size: 45px;
+    font-weight: 700;
+
+}
+section .slide .text{
+    margin: 10px;
+}
+
+section .articles{
+    margin-top: 20px;
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+section .articles div{
+    aspect-ratio: 1/1;
+    max-width: 360px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .articles div img{
+    width: 95%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
+/* products */
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 100px;
+}
+.products .product{
+
+    min-width:260px;
+    width: 25%;
+    margin: 30px;
+    position: relative;
+
+
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+
+}
+.products .product img{
+    padding: 20px;
+
+    
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+.products .product> span{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #f17291;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+footer img{
+    height: 40%;
+    margin: 0 5px;
+
+    aspect-ratio: 1/1;
+}
+footer >div{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+footer >div div{
+    margin: 0 5px;
+}
